@@ -18,6 +18,7 @@ contract ATest is Test {
  emit log_address(address(this));
  // HEVM_ADDRESS is a special reserved address for the VM
  emit log_address(HEVM_ADDRESS);
+ emit log("hi!");
  }
  function test_GetValue() public {
  assertTrue(a.retrieve() == 0);

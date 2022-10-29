@@ -12,7 +12,7 @@ struct Payment{
 contract VolcanoCoin is Ownable {
 
     uint256 totalSupply = 10000;
-    uint256 totalSupplyIncrement = 1000;
+    uint256 public totalSupplyIncrement = 1000;
     event supplyChange(uint totalSupply);
     event transferEvent(uint amount, address receiver);
     
